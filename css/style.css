@@ -119,6 +119,10 @@ main .row {
   right: 0;
 }
 
+.card-image .card-wishlist:hover {
+  color: rgb(205, 3, 3);
+}
+
 .card-content {
   color: black;
 }
