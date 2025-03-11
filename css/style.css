@@ -12,6 +12,9 @@ body {
 ul li {
   list-style-type: none;
   color: white;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 a {
@@ -28,4 +31,34 @@ a {
 
 .row {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 200px;
+}
+img {
+  max-width: 100%;
+}
+
+/************ HEADER ******************/
+header {
+  background-color: #fe6901;
+  padding: 10px 0px;
+  position: sticky;
+  top: 0;
+}
+
+/* center logo div to page */
+header > .container > .row > * {
+  flex-basis: 150px;
+}
+
+.header-logo > img {
+  width: 120px;
+}
+
+.header-icons {
+  text-align: end;
+}
+.header-icons > * {
+  color: white;
 }
