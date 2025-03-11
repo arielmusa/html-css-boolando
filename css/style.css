@@ -21,6 +21,10 @@ a {
   text-decoration: none;
   color: white;
 }
+img {
+  max-width: 100%;
+  display: block;
+}
 
 /*************** UTILS ***************/
 
@@ -34,9 +38,6 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-basis: 200px;
-}
-img {
-  max-width: 100%;
 }
 
 /************ HEADER ******************/
@@ -61,4 +62,86 @@ header > .container > .row > * {
 }
 .header-icons > * {
   color: white;
+  padding: 5px;
+}
+
+/************ MAIN ******************/
+
+main .row {
+  padding: 50px 0px;
+}
+
+.card {
+  max-height: 500px;
+  width: calc(100% / 3);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image .back-image {
+  display: none;
+}
+
+.card:hover .front-image {
+  display: none;
+}
+.card:hover .back-image {
+  display: block;
+}
+
+.card-image .label-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+.card-image .label {
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+.card-image .label-discount {
+  background-color: red;
+}
+.card-image .label-sustainable {
+  background-color: green;
+}
+
+.card-image .card-wishlist {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  top: 10px;
+  right: 0;
+}
+
+.card-content {
+  color: black;
+}
+
+.card-content .item-brand {
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+.card-content .item-title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card-content .item-price,
+.card-content .item-discount-price {
+  font-size: 12px;
+}
+.card-content .item-price {
+  color: rgb(207, 2, 2);
+  font-weight: bold;
+}
+
+.card-content .item-discount-price {
+  text-decoration: line-through;
 }
