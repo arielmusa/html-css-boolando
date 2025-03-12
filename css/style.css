@@ -30,7 +30,7 @@ img {
 /*************** UTILS ***************/
 
 .container {
-  width: 1100px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -73,12 +73,11 @@ main .row {
   gap: 30px;
   justify-content: left;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .card {
-  width: calc(100% / 3);
-  flex-basis: 30%;
+  width: 30%;
+  flex-grow: 1;
   cursor: pointer;
 }
 
